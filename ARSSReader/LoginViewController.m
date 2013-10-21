@@ -40,11 +40,9 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"showUserFeeds"]) {
-        NSLog(@"SEGUEDDDD");
         MasterViewController *destViewController = segue.destinationViewController;
         destViewController.userName = userName.text;
     }
-
 }
 
 @end
